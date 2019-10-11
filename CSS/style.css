@@ -1,0 +1,362 @@
+
+body{
+    text-align: center;
+    background-image: url(/Images/vector-gold-glitter-background.jpg);
+    font-family:Arial, Helvetica, sans-serif;
+}
+header{
+font-family: 'Notable',sans-serif;
+text-align:center;
+font-size:5em;
+color:goldenrod;
+text-shadow:5px 5px 5px white;
+}
+/*glitter graphic*/
+.homepage{
+   /* border:solid red;*/
+    background-image:url(/Images/Glitter-PNG-HD-Image.png);
+    height:600px;
+    width:850px;
+    position:absolute;
+    animation:fade;
+    animation-duration:3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes fade{
+    from{transform:translate(0,200px);opacity:.2;}
+    to{transform:translate(0,-50px);opacity:.7;}
+}
+
+/*pic on homepage*/
+.index{
+margin:2% 7%;
+height:100vh;
+background-image: url(/Images/CILY_cutout.png);
+position: relative;
+/*border:solid pink;*/
+opacity: .9;
+}
+
+/*links to other pages from home page*/
+.home{
+    /*border: solid red;*/
+    border-radius:50% 50%;
+    height:115px;
+    width:115px;
+    font-size:16pt;
+    color:white;
+    background-color: rgba(83, 12, 150, 0.5);
+}
+.home:hover{
+color:black;
+background:rgba(255,255,255,.5);
+height:150px;
+width:150px;
+}
+
+/* row of top and bottom 2 icons*/
+.rowI{
+/*border:solid;*/
+height:30vh;
+width:80vw;
+display:flex;
+justify-content: space-around;
+text-align: center;
+}
+/* row of middle 2 icons*/
+.rowII{
+/*border:solid;*/
+height:30vh;
+width:80vw;
+display:flex;
+justify-content: space-between;
+text-align: center;
+}
+/*navigation bar*/
+.navbar {
+    display: flex;
+    justify-content: space-around;
+   /*border: solid red;*/
+    height:5vh;
+    width:80vw;
+    padding-right:25px;
+    margin:0 5%;
+   position:fixed;
+   z-index:15;
+   background-color:rgba(0,0,0,.8);
+}
+
+/*list items in nav bar*/
+/*.navitem{
+    display:none;
+}
+ul:hover .navitem{   
+    display:block;
+    text-align
+}*/
+
+li{
+    display:block;
+}
+a{
+    text-decoration:none;
+    color: pink;
+}
+a:visited{
+    text-decoration:none;
+}
+.modal{
+   display:none;
+    position: fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    overflow:auto;
+/*image from thecut.com*/
+    background-image:url(/Images/flute.jpg);
+    opacity:0.9;
+}
+.modalContent{
+    background-color:rgb(80, 200, 221);
+    margin: 40% auto;
+    width:70%;
+    color:white;
+    height:30vh;
+    font-size:20pt;
+    font-weight: bold;
+}
+.open{
+font-family: 'Notable',sans-serif;
+text-align:center;
+font-size:2em;
+color:goldenrod;
+text-shadow:5px 5px 5px white;
+position: relative;
+}
+.close{
+   color:white;
+   float: right;
+   font-size:3em;
+}
+.close:hover,.close:focus{
+color:grey;
+text-decoration: none;
+cursor: pointer;
+}
+
+footer{
+    margin: 10px 35%;
+    position: relative;
+}
+
+/*container div on bio page*/
+.container2{
+  /*  border:solid red;*/
+    margin: auto 10%;
+    justify-content: center;
+}
+
+/*pic on bio page*/
+.pic1{
+/*border:solid;*/
+padding:20px 85px 0px 85px;;
+}
+.bio{
+  /*border:solid;*/
+    color: rgb(235, 217, 173);
+    text-shadow: 5px 5px 5px black;
+    width:78vw;
+background-color:rgba(0,0,0,.8);
+}
+
+.tour{
+    /*border:solid;*/
+    display:flex;
+    justify-content:space-around;
+    height:80vh;
+    background-image: url(/Images/lizzo-glow.jpg);
+    opacity:0.8;
+}
+.tourcolumn{
+   /* border:solid;*/
+    text-align:center;
+    background-color:rgba(223, 205, 205, 0.2);
+    height:55vh;
+    font-weight:bold;
+    margin-top:50px;
+    color:black;
+    font-size: 14pt;
+    text-shadow:3px 3px 3px pink;
+}
+.tourinfo{
+    text-shadow: 5px 5px 5px black;
+}
+
+.covers{
+    /*border:solid;*/
+    margin:2%;
+    background-color: rgba(238, 238, 159,.6);
+    padding:30px;
+}
+.coverTitle{
+    font-size: 2em;
+    font-weight:bold;
+}
+.interviews1{
+    /*border:solid;*/
+    width:85vw;
+    text-align:center;
+   /* background-color:rgba(255,255,255,.5);*/
+    display:flex;
+    justify-content: space-around;
+    margin:30px 60px;
+}
+.interviews2{
+   /* border:solid;*/
+    width:85vw;
+    text-align:center;
+   /* background-color:rgba(255,255,255,.5);*/
+    display:flex;
+    justify-content:space-around;
+    margin:30px 60px;
+}
+/*interview vid divs*/
+.iv{
+   /* border:solid red;*/
+    background-color:rgba(241, 172, 184,.5);
+    padding:20px
+}
+
+.bio{
+    font-size: 14pt;
+    font-weight: bold;
+}
+.albums{
+   /* border:solid;*/
+    margin:2% 2%;
+    font-weight:bold;
+}
+
+/*dr = discography row*/
+.dr1{
+    background-color:rgba(247, 214, 27,.6);
+}
+.dr2{
+    background-color:rgba(202, 158, 202,.6);
+}
+.dr3{
+    background-color: rgba(243, 31, 31,.6);
+}
+.dr4{
+background-color: rgba(110, 250, 203,.6);
+}
+.dr5{
+background-color:rgba(243, 154, 64,.6);
+}
+/*div containing all vids on music page*/
+.videos{
+/*    border:solid;*/
+    height:50vh;
+    display:flex;
+}
+/*individual music video divs*/
+.music{
+    /*border:solid;*/
+    height:50vh;
+}
+.musicH1{
+    font-family:sans-serif;
+    color:white;
+    text-shadow: 3px 3px 3px pink;
+}
+.gallery{
+    background-image: url(/Images/puffs.jpg);
+}
+
+.slideshow{
+   /* border: solid red;*/
+    width: 80%;
+    margin: 50px auto;
+    padding-top:40px;
+    overflow: hidden;
+    height:350px;
+}
+.ssButtons{
+    display:flex;
+    justify-content: space-around;
+}
+.prev{
+border-radius:50% 50%;
+height:40px;
+width:45px;
+font-size: 12pt;
+}
+.prev:hover{
+    background-color:lightblue;
+}
+.next{
+    border-radius:50% 50%;
+    height:40px;
+    width:45px;
+    font-size: 12pt;
+}
+.next:hover{
+    background-color:lightblue;
+}
+.performances{
+    width:90%;
+    display:flex;
+    margin: auto;
+    padding:auto;
+    justify-content: space-around;
+    /*border:solid red;*/
+
+}
+/*performances header*/
+.perf{
+    color:black;
+    text-shadow: 3px 1px 3px pink;
+    font-size:2em;
+}
+
+
+/*Magic 8 ball
+image from Google images*/
+#ballContent{
+width: 600px;
+margin:0 auto;
+margin-top:50px;
+/*border:solid red;*/
+background-image: url(/Images/workout.png);
+opacity:0.9;
+color:white;
+}
+.eightBall{
+    background-color:indigo;
+    border:solid indigo;
+    border-radius:50%;
+    width:300px;
+    height:300px;
+    margin:0 auto;
+    margin-bottom: 30px;
+    opacity:0.9;
+}
+
+.answer{
+    background-color:blue;
+    border: solid indigo;
+    border-radius: 50%;
+    height: 50%;
+    width:50%;
+    margin: 25% auto;
+}
+
+#eight{
+    font-size:2em;
+    margin: 20% auto;
+    color:white;
+    font-family:cursive;
+}
